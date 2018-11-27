@@ -1,6 +1,6 @@
 package com.kikuchi.masa.navigationsample
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kikuchi.masa.navigationsample.ui.main.MainFragment
 
