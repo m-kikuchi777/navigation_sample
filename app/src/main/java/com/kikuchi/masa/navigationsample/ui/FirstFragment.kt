@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import com.kikuchi.masa.navigationsample.R
 import kotlinx.android.synthetic.main.fragment_first.view.*
 
@@ -48,7 +49,15 @@ class FirstFragment : Fragment() {
 
         // FourthFragmentへ遷移するためのボタン
         view.fourthFragmentButton.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_fourthFragment)
+            val navOption = navOptions {
+                anim {
+                    enter = R.anim.nav_default_enter_anim
+                    exit = R.anim.nav_default_exit_anim
+                    popEnter = R.anim.nav_default_pop_enter_anim
+                    popExit = R.anim.nav_default_pop_exit_anim
+                }
+            }
+            findNavController().navigate(R.id.action_firstFragment_to_fourthFragment, null, navOption)
         }
     }
 }
