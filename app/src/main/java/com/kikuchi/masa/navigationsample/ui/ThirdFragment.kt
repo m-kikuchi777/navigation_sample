@@ -9,19 +9,9 @@ import com.kikuchi.masa.navigationsample.R
 
 
 /**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [ThirdFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [ThirdFragment.newInstance] factory method to
- * create an instance of this fragment.
- *
  */
 class ThirdFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +22,6 @@ class ThirdFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(param1: String, param2: String) = ThirdFragment()
+        fun newInstance() = ThirdFragment()
     }
 }

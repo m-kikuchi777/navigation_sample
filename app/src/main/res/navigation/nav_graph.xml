@@ -12,13 +12,16 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@+id/secondFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
         <action
             android:id="@+id/action_firstFragment_to_thirdFragment"
             app:destination="@id/thirdFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_firstFragment_to_fourthFragment"
@@ -30,9 +33,16 @@
         android:id="@+id/secondFragment"
         android:name="com.kikuchi.masa.navigationsample.ui.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second"/>
+        tools:layout="@layout/fragment_second">
+        <action android:id="@+id/action_secondFragment_to_argumentFragment"
+                app:destination="@id/argumentFragment"/>
+    </fragment>
     <fragment android:id="@+id/thirdFragment" android:name="com.kikuchi.masa.navigationsample.ui.ThirdFragment"
               android:label="fragment_third" tools:layout="@layout/fragment_third"/>
     <fragment android:id="@+id/fourthFragment" android:name="com.kikuchi.masa.navigationsample.ui.FourthFragment"
               android:label="fragment_fourth" tools:layout="@layout/fragment_fourth"/>
+    <fragment android:id="@+id/argumentFragment" android:name="com.kikuchi.masa.navigationsample.ui.ArgumentFragment"
+              android:label="fragment_argument" tools:layout="@layout/fragment_argument">
+        <argument android:name="inputText" app:argType="string"/>
+    </fragment>
 </navigation>
