@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.kikuchi.masa.navigationsample.R
 
 /**
- *
+ * 4番目のフラグメント。
  */
 class FourthFragment : Fragment() {
 
@@ -17,10 +17,5 @@ class FourthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_fourth, container, false)
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() = FourthFragment()
     }
 }
