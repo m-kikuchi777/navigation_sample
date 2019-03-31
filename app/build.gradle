@@ -31,7 +31,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
 
     // Navitaion
-    def nav_version = "1.0.0-rc02"
+    def nav_version = "1.0.0"
     implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
 
